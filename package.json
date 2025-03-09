@@ -1,8 +1,11 @@
 {
   "name": "ministelo-web",
+  "type": "module",
   "scripts": {
     "dev": "bun run --hot src/index.tsx",
-    "format": "prettier --write 'src/**/*.(ts|tsx)'"
+    "format": "prettier --write 'src/**/*.(ts|tsx)'",
+    "lint": "bunx eslint src --ext .ts,.tsx",
+    "lint:fix": "bunx eslint src --ext .ts,.tsx --fix"
   },
   "dependencies": {
     "hono": "^4.7.4",
@@ -10,6 +13,12 @@
   },
   "devDependencies": {
     "@types/bun": "^1.2.4",
+    "@typescript-eslint/eslint-plugin": "^8.26.0",
+    "@typescript-eslint/parser": "^8.26.0",
+    "eslint": "^9.22.0",
+    "eslint-plugin-css": "^0.11.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsdoc": "^50.6.3",
     "prettier": "^3.5.3"
   }
 }

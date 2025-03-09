@@ -18,6 +18,8 @@ bun create hono ministelo-web
 bun i -D prettier
 bun add -d @types/bun
 bun install normalize.css
+npm init @eslint/config
+rm package-lock.json && bun i
 ```
 
 ## References
