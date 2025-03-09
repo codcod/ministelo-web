@@ -5,7 +5,8 @@
     "format": "prettier --write 'src/**/*.(ts|tsx)'"
   },
   "dependencies": {
-    "hono": "^4.7.4"
+    "hono": "^4.7.4",
+    "normalize.css": "^8.0.1"
   },
   "devDependencies": {
     "@types/bun": "^1.2.4",

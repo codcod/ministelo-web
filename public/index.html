@@ -3,9 +3,12 @@
     <title>Ministelo Web</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="https://unpkg.com/htmx.org@2.0.0"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
   </head>
   <body>
-    <button hx-get="/version" hx-target="#version">Get Bun Version</button>
+    <h1>Ministelo Web</h1>
+    <p>Welcome to Ministelo Web!</p>
+    <button hx-get="/messages" hx-target="#version">Get Bun Version</button>
     <div id="version"></div>
   </body>
 </html>

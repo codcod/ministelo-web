@@ -9,4 +9,10 @@ app.get('/version', (c: Context) => {
   return c.text(Bun.version);
 });
 
+app.get('/messages', async (c: Context) => {
+  const resp = await fetch('http://localhost:8000/messages');
+  const messages = await resp.json();
+  return c.json(messages);
+});
+
 export default app;

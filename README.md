@@ -17,6 +17,7 @@ bun create hono ministelo-web
 
 bun i -D prettier
 bun add -d @types/bun
+bun install normalize.css
 ```
 
 ## References
