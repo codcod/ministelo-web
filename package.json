@@ -1,0 +1,14 @@
+{
+  "name": "ministelo-web",
+  "scripts": {
+    "dev": "bun run --hot src/index.tsx",
+    "format": "prettier --write 'src/**/*.(ts|tsx)'"
+  },
+  "dependencies": {
+    "hono": "^4.7.4"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.4",
+    "prettier": "^3.5.3"
+  }
+}
